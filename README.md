@@ -4,5 +4,6 @@ Este projeto foi desenvolvido utilizando:
 
 HTML
 CSS
+PhP
 JavaScript
 Postgres
