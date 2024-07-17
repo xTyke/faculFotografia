@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang = "pt-br">
+    <head>
+        <title>Fotografia</title>
+        <meta charset = "utf-8">
+        <meta name="viewport" content="width=device-widht;initial-scale=1.0;maximum-scale=1.0">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/3f826dc156.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="projeto/style.css">
+        <link rel="stylesheet" type="text/css" href="css/validation.css">
+        <script src="js/validacao.js"></script>
+    </head>
+    <body>
+        <header>
+            <div class="container">
+                <div class="logo"><a href="index.html"><h2>Fotografo.com</h2></a></div>
+                <nav class="menu-desktop">
+                    <ul>
+                        <li>
+                            <a href="index.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="sobre.html">Sobre</a>
+                        </li>
+                        <li class="selected">
+                            <a href="contato.html">Contato</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="clear"></div>
+            </div>
+        </header>
+        <section style="background-image: url(Imagens/img4.jpg);" class="title-page">
+            <div class="overlay__title-page"></div>
+            <div class="container">
+            <h2>Sobre</h2>
+            <p>Sou apenas um fotografo apaixonado pelo que faz, com mais de 10 anos de experiencia no mercado e apto para ajuda-lo(a) a
+                simplesmente recordar os momentos mais incriveis da sua vida. Entre em contato e agende o nosso serviço.
+            </p>
+            </div><!--container-->
+        </section>
+        <div class="contato">
+            <div class="container">
+                <div class="w60 formulario">
+                    <h2>Entre em contato que estaremos respondendo o mais breve possivel.</h2>
+                    <form action="crud/inserir.php" method="GET">
+                        <div class="w50">
+                            <input placeholder="Nome..." name="nome" type="text" onKeyUp="validaNome()" required/>
+                            <div id="nome-erro" class="message-error"></div>
+                        </div>
+                        <div class="w100">
+                            <input placeholder="E-mail..." name="email" type="email" required/>
+                            <div id="email-erro" class="message-error"></div>
+                        </div>
+                        <div class="w100">
+                            <textarea placeholder="Sua mensagem..." type="text" required> </textarea>
+                            <div id="msg-erro" class="message-error"></div>
+                        </div>
+                    <input id="btn-enviar" name="msg" type="submit" onClick="validar()" value="Enviar" />
+                </form>
+                </div>
+                
+                <div class="w40 tags-form">
+                    <h2><i class="fa fa-comment"></i> Fale com a nossa equipe</h2>
+                    <p>Entre em contato agora mesmo e agende.</p>
+                    <p class="tag-contato"><i class="fa fa-facebook"></i> Fotografo Fulano</p>
+                </div>
+                <div class="clear"></div>
+            </div>
+        </div>
+        <footer class="footer1">
+        <div class="container">
+            <div class="w33">
+                <h2>Fale Conosco</h2>
+                <p><i class="fa-solid fa-map-pin"></i> Rua Logo Ali - 171</p>
+                <p><i class="fa-solid fa-mobile-screen-button"></i> (21)99999-9999</p>
+            </div>
+            <div class="w33">
+                <h2>Links Uteis</h2>
+                <a href="https://www.youtube.com/retrociencia"><i class="fa-brands fa-youtube"></i> EasterEgg</a>
+            </div>
+            <div class="w33">
+                <h2>Conecte-se Conosto</h2>
+                <div class="group-icons">
+                <a href="https://www.linkedin.com/in/jeferson-pereira-81253019b/"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+            </div>
+            </div>
+            <div class="clear"></div>
+        </div>
+    </footer>
+    <footer class="footer2">
+        <div class="container">
+        <p>Todoso os direitos reservados</p>
+    </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+
+    </script>
+</body>
+</html>

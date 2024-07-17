@@ -1,0 +1,38 @@
+body {
+    background-color: #fffdef;
+    font-family: 'Trebuchet MS';
+}
+
+label {
+    display: block;
+}
+
+input {
+    display: block;   /* vai pular pular linha */
+    width: 250px;
+    border-radius: 8px;
+    background-color: #ffd6a7;
+    outline: none; 
+    border: 0px;
+    padding: 5px;
+    margin-bottom: 2px;
+}
+
+#btn-enviar {
+    margin-top: 20px;
+    width: 100px;
+    padding: 8px;
+    cursor: pointer;
+    background-color: #fc9725;
+}
+
+#btn-enviar:hover {
+    background-color: #f6cd47;
+}
+
+
+.message-error {
+    color: red;
+    margin-bottom: 12px;
+    font-weight: bold;
+}

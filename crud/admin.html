@@ -1,0 +1,61 @@
+<html lang="pt-BR">
+    <head>
+        <meta charset="utf-8" />  
+        <title> Área do Admin </title>
+        <link rel="stylesheet" href="crud.css">
+    </head>
+    <body>
+        <ul class="blococrud">
+            <h2> Inserir (C) </h2>
+            <form action="inserir.php" method="GET">
+                <label>Nome: </label><br>
+                <input type="text" name="nome" /><br>
+
+                <label>Email: </label><br>
+                <input type="text" name="email" /><br>
+
+                <label>Mensagem: </label><br>
+                <textarea rows="15" style="width: 250;" class="campoform" type="text"></textarea>
+                <br><br>
+                <input type="submit" name="msg" value="Inserir"/>
+            </form>
+        </ul>
+        <br>
+        <ul class="blococrud">
+            <h2> Listar (R) </h2>
+            <form action="listar.php" method="GET">
+            <input type="submit" value="Listar"/>
+            </form>
+        </ul>
+
+        <br>
+
+        <ul class="blococrud">
+        <h2> Atualizar (U) </h2>
+            <form action="atualizar.php" method="GET">
+                <label>id: </label><br>
+                <input type="text" name="id" /><br>
+
+                <label>Nome: </label><br>
+                <input type="text" name="nome" /><br>
+
+                <label>Email: </label><br>
+                <input type="text" name="email" /><br>
+
+                <br><br>
+                <input type="submit" value="Atualizar"/>
+            </form>
+        </ul>
+
+        <br>
+        <ul class="blococrud">
+            <h2> Remover (D)</h2>
+            <form action="deletar.php" method="GET">
+                <label>Id: </label><br>
+                <input type="text" name="id" /><br>
+                <br><br>
+                <input type="submit" value="Remover"/>
+            </form>
+        </ul>
+    </body>
+</html>
